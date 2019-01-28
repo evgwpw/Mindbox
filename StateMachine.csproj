@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD39EFFB-85C4-4CCB-A7DC-F884F65D533E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inec.StateMachine</RootNamespace>
+    <AssemblyName>StateMachine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Loging\LogEntity.cs" />
+    <Compile Include="Loging\LogEntityType.cs" />
+    <Compile Include="Loging\TraceExtension.cs" />
+    <Compile Include="OutServiceStarter\Checker.cs" />
+    <Compile Include="OutServiceStarter\Configuration\ConfigManager.cs" />
+    <Compile Include="OutServiceStarter\DB\DBUtil.cs" />
+    <Compile Include="OutServiceStarter\DB\DataLoader.cs" />
+    <Compile Include="OutServiceStarter\DB\IDataLoader.cs" />
+    <Compile Include="OutServiceStarter\Mapping\MapperBase.cs" />
+    <Compile Include="OutServiceStarter\Runner.cs" />
+    <Compile Include="OutServiceStarter\WSReferences\Service.cs" />
+    <Compile Include="OutServiceStarter\WSReferences\ServicePartial.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runner.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\Cache.cs" />
+    <Compile Include="Storage\CacheConfig.cs" />
+    <Compile Include="Storage\Criteria.cs" />
+    <Compile Include="Storage\CriteriaItem.cs" />
+    <Compile Include="Storage\CriteriaItemList.cs" />
+    <Compile Include="Storage\CoreRefItem.cs" />
+    <Compile Include="Storage\InRegistryStorage.cs" />
+    <Compile Include="Storage\InSeparateRegistryStorage.cs" />
+    <Compile Include="Storage\NonStorage.cs" />
+    <Compile Include="Storage\ProcessingType.cs" />
+    <Compile Include="Storage\RefItems.cs" />
+    <Compile Include="StateMachineProcessor.cs" />
+    <Compile Include="Storage\StateMachineAdjacent.cs" />
+    <Compile Include="Storage\StateMachineItemList.cs" />
+    <Compile Include="Storage\StateMachineTransitionItem.cs" />
+    <Compile Include="Storage\StateMachineTransitionItemsList.cs" />
+    <Compile Include="Storage\StateMachineTransitions.cs" />
+    <Compile Include="Storage\StateMachineHelper.cs" />
+    <Compile Include="Storage\StateMachineItem.cs" />
+    <Compile Include="Storage\Statuse.cs" />
+    <Compile Include="Storage\StatuseItem.cs" />
+    <Compile Include="Storage\StatuseItemList.cs" />
+    <Compile Include="Storage\StorageBase.cs" />
+    <Compile Include="Storage\StorageType.cs" />
+    <Compile Include="Storage\TreeRef.cs" />
+    <Compile Include="Storage\TreeRefItem.cs" />
+    <Compile Include="Storage\TreeRefItemList.cs" />
+    <Compile Include="Util\ConcutentHashSet.cs" />
+    <Compile Include="Util\QSColumnRegisterVisitor.cs" />
+    <Compile Include="Util\QSConditionColumnsVisitor.cs" />
+    <Compile Include="Util\QSQueryUtil.cs" />
+    <Compile Include="ValidationСycles\Checker.cs" />
+    <Compile Include="ValidationСycles\ContiguousRegistersUtil.cs" />
+    <Compile Include="ValidationСycles\Graph.cs" />
+    <Compile Include="ValidationСycles\GraphArc.cs" />
+    <Compile Include="ValidationСycles\GraphArcList.cs" />
+    <Compile Include="ValidationСycles\ListOfListMachines.cs" />
+    <Compile Include="ValidationСycles\StateMachineData.cs" />
+    <Compile Include="ValidationСycles\StateMachineDataList.cs" />
+    <Compile Include="Util\StateMachineException.cs" />
+    <Compile Include="Util\StateMachineExtensions.cs" />
+    <Compile Include="Util\UniversalCache.cs" />
+    <Compile Include="ValidationСycles\VertexGraph.cs" />
+    <Compile Include="ValidationСycles\GraphVertexList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.ConfigParam\Core.ConfigParam.csproj">
+      <Project>{9B0E8F8D-29BD-445A-9D96-7C36AEFAAEA1}</Project>
+      <Name>Core.ConfigParam</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.Diagnostics\Core.Diagnostics.csproj">
+      <Project>{40784BE0-FBDF-4C10-884B-D052545B71E0}</Project>
+      <Name>Core.Diagnostics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.ErrorManagment\Core.ErrorManagment.csproj">
+      <Project>{DF49F9C0-869C-45CF-809B-02580D4AF922}</Project>
+      <Name>Core.ErrorManagment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.ObjectModel.CustomAttribute\Core.ObjectModel.CustomAttribute.csproj">
+      <Project>{55C0A7FE-5AC6-4767-AE78-3DF4F432FC75}</Project>
+      <Name>Core.ObjectModel.CustomAttribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.Register.ObjectModel\Core.Register.ObjectModel.csproj">
+      <Project>{C43993C9-3520-482F-8990-82C22C648670}</Project>
+      <Name>Core.Register.ObjectModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.Register\Core.Register.csproj">
+      <Project>{62C48F05-B200-4374-9131-EB1B0A8CF50B}</Project>
+      <Name>Core.Register</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.Shared\Core.Shared.csproj">
+      <Project>{DD208024-DDE3-40A6-AE6A-DA47BF553267}</Project>
+      <Name>Core.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.SRD\Core.SRD.csproj">
+      <Project>{DEF99D5E-B956-4FA1-9B57-41A90FA52BFF}</Project>
+      <Name>Core.SRD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CoreRef\Source\Core.Td\Core.Td.csproj">
+      <Project>{010BE847-ACBB-407A-87FB-C64796BF17B9}</Project>
+      <Name>Core.Td</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OutServiceStarter\XML\spd.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

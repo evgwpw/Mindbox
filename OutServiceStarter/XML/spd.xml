@@ -1,0 +1,868 @@
+﻿<SPD>
+  <xs:schema id="SPD" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="SPD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Outcome">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="outcome_num" type="xs:string" minOccurs="0" />
+                <xs:element name="outcome_date" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="id_typevidan" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Applicant">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ogrn" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="13" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="inn" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fio_f" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fio_i" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fio_o" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_serial" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_num" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="6" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_vidan" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_vidan_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="snils" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="14" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sex" type="xs:int" minOccurs="0" />
+                <xs:element name="ur_address" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="index_n" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="6" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="locality" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="district" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="region" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="street" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="house_corp_str" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="flat_office" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="contactphone" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="smsphone" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="email" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="type_subj" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id_type_subj2">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="9" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="type_subj2" type="xs:string" minOccurs="0" />
+                <xs:element name="birth_date" type="xs:dateTime" minOccurs="0"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Predst">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="id_type_predst" type="xs:int" minOccurs="0" />
+                <xs:element name="type_predst" type="xs:string" minOccurs="0" />
+                <xs:element name="fio_f" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fio_i" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fio_o" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="snils" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="14" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_serial" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_num" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="6" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_vidan" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="passport_vidan_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Realty">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="id_type_object" type="xs:int" minOccurs="0" />
+                <xs:element name="type_object" type="xs:string" minOccurs="0" />
+                <xs:element name="kadnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="uslnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="addr_orientir" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="placement" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="floor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rooms" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="okato" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="11" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kod_region" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id_purpose" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="NocapObj">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_document" type="xs:int" minOccurs="0" />
+                <xs:element name="id_object_name" type="xs:int" minOccurs="0" />
+                <xs:element name="object_name" type="xs:string" minOccurs="0" />
+                <xs:element name="addr_orientir" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="descr" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="512" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Land">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="kadnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="addr_orientir" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="okato" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="11" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kod_region" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CurrentDoc">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="id_doctype" type="xs:int" minOccurs="0" />
+                <xs:element name="doctype" type="xs:string" minOccurs="0" />
+                <xs:element name="docnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="docdate" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="GosContract">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="docnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="docdate" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="govauthorityname" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="constructobjname" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Reqs">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="bankname" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kpp" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="9" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="okpo" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="curracc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="corracc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="bik" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="9" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id_type_signer" type="xs:int" minOccurs="0" />
+                <xs:element name="type_signer" type="xs:string" minOccurs="0" />
+                <xs:element name="snils" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="14" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="signer_position" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id_type_basedocname" type="xs:int" minOccurs="0" />
+                <xs:element name="type_basedocname" type="xs:string" minOccurs="0" />
+                <xs:element name="doc_description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="docdate" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="docnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RaspPrefect">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="docnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="docdate" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DocChanges">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="id_type_changes" type="xs:int" minOccurs="0" />
+                <xs:element name="type_changes" type="xs:string" minOccurs="0" />
+                <xs:element name="id_type_sidechangebase" type="xs:int" minOccurs="0" />
+                <xs:element name="type_sidechangebase" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="deadline" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="reqschangedesc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Post">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="address" type="xs:string" minOccurs="0" />
+                <xs:element name="index_n" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="6" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="locality" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="district" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="region" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="street" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="house_corp_str" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="flat_office" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Payment">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="prefpayorder" type="xs:decimal" minOccurs="0" />
+                <xs:element name="payfreq" type="xs:decimal" minOccurs="0" />
+                <xs:element name="paydeadline" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Claim">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="Id_claim_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56"></xs:maxLength>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="statusreqdate" type="xs:dateTime" minOccurs="0"/>
+                <xs:element name="flsnum" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="56"></xs:maxLength>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kbk" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20"></xs:maxLength>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rent" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20"></xs:maxLength>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="penalties" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20"></xs:maxLength>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Comments">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id_documents" type="xs:int" minOccurs="0" />
+                <xs:element name="comment_text" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="512" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="content" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="512" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Outcome>
+    <outcome_num xml:space="preserve"></outcome_num>
+    <outcome_date>1977-03-26T00:00:00+03:00</outcome_date>
+    <id_typevidan>-1</id_typevidan>
+  </Outcome>
+  <Applicant>
+    <id_documents>-1</id_documents>
+    <name xml:space="preserve"></name>
+    <ogrn xml:space="preserve"></ogrn>
+    <inn xml:space="preserve"></inn>
+    <fio_f xml:space="preserve"></fio_f>
+    <fio_i xml:space="preserve"></fio_i>
+    <fio_o xml:space="preserve"></fio_o>
+    <passport_serial xml:space="preserve"></passport_serial>
+    <passport_num xml:space="preserve"></passport_num>
+    <passport_vidan xml:space="preserve"></passport_vidan>
+    <passport_vidan_date xml:space="preserve"></passport_vidan_date>
+    <snils xml:space="preserve"></snils>
+    <sex>-1</sex>
+    <ur_address xml:space="preserve"></ur_address>
+    <index_n xml:space="preserve"></index_n>
+    <locality xml:space="preserve"></locality>
+    <district xml:space="preserve"></district>
+    <region xml:space="preserve"></region>
+    <street xml:space="preserve"></street>
+    <house_corp_str xml:space="preserve"></house_corp_str>
+    <flat_office xml:space="preserve"></flat_office>
+    <contactphone xml:space="preserve"></contactphone>
+    <smsphone xml:space="preserve"></smsphone>
+    <email xml:space="preserve"></email>
+    <type_subj xml:space="preserve"></type_subj>
+    <id_type_subj2 xml:space="preserve"></id_type_subj2>
+    <type_subj2 xml:space="preserve"></type_subj2>
+    <birth_date>1977-03-26T00:00:00+03:00</birth_date>
+  </Applicant>
+  <Predst>
+    <id_documents>-1</id_documents>
+    <id_type_predst>-1</id_type_predst>
+    <type_predst xml:space="preserve"></type_predst>
+    <fio_f xml:space="preserve"></fio_f>
+    <fio_i xml:space="preserve"></fio_i>
+    <fio_o xml:space="preserve"></fio_o>
+    <snils xml:space="preserve"></snils>
+    <passport_serial xml:space="preserve"></passport_serial>
+    <passport_num xml:space="preserve"></passport_num>
+    <passport_vidan xml:space="preserve"></passport_vidan>
+    <passport_vidan_date xml:space="preserve"></passport_vidan_date>
+  </Predst>
+  <Realty>
+    <id_documents>-1</id_documents>
+    <id_type_object>-1</id_type_object>
+    <type_object xml:space="preserve"></type_object>
+    <kadnum xml:space="preserve"></kadnum>
+    <uslnum xml:space="preserve"></uslnum>
+    <addr_orientir xml:space="preserve"></addr_orientir>
+    <placement xml:space="preserve"></placement>
+    <floor xml:space="preserve"></floor>
+    <rooms xml:space="preserve"></rooms>
+    <okato xml:space="preserve"></okato>
+    <kod_region xml:space="preserve"></kod_region>
+    <id_purpose>-1</id_purpose>
+  </Realty>
+  <NocapObj>
+    <id_document>-1</id_document>
+    <id_object_name>-1</id_object_name>
+    <object_name xml:space="preserve"></object_name>
+    <addr_orientir xml:space="preserve"></addr_orientir>
+    <descr xml:space="preserve"></descr>
+  </NocapObj>
+  <Land>
+    <id_documents>-1</id_documents>
+    <kadnum xml:space="preserve"></kadnum>
+    <addr_orientir xml:space="preserve"></addr_orientir>
+    <okato xml:space="preserve"></okato>
+    <kod_region xml:space="preserve"></kod_region>
+  </Land>
+  <CurrentDoc>
+    <id_documents>-1</id_documents>
+    <id_doctype>-1</id_doctype>
+    <doctype xml:space="preserve"></doctype>
+    <docnum xml:space="preserve"></docnum>
+    <docdate xml:space="preserve"></docdate>
+  </CurrentDoc>
+  <GosContract>
+    <id_documents>-1</id_documents>
+    <docnum xml:space="preserve"></docnum>
+    <docdate xml:space="preserve"></docdate>
+    <govauthorityname xml:space="preserve"></govauthorityname>
+    <constructobjname xml:space="preserve"></constructobjname>
+  </GosContract>
+  <Reqs>
+    <id_documents>-1</id_documents>
+    <bankname xml:space="preserve"></bankname>
+    <kpp xml:space="preserve"></kpp>
+    <okpo xml:space="preserve"></okpo>
+    <curracc xml:space="preserve"></curracc>
+    <corracc xml:space="preserve"></corracc>
+    <bik xml:space="preserve"></bik>
+    <id_type_signer>-1</id_type_signer>
+    <type_signer xml:space="preserve"></type_signer>
+    <snils xml:space="preserve"></snils>
+    <signer_position xml:space="preserve"></signer_position>
+    <id_type_basedocname>-1</id_type_basedocname>
+    <type_basedocname xml:space="preserve"></type_basedocname>
+    <doc_description xml:space="preserve"></doc_description>
+    <docdate xml:space="preserve"></docdate>
+    <docnum xml:space="preserve"></docnum>
+  </Reqs>
+  <RaspPrefect>
+    <id_documents>-1</id_documents>
+    <docnum xml:space="preserve"></docnum>
+    <docdate xml:space="preserve"></docdate>
+  </RaspPrefect>
+  <DocChanges>
+    <id_documents>-1</id_documents>
+    <id_type_changes>-1</id_type_changes>
+    <type_changes xml:space="preserve"></type_changes>
+    <id_type_sidechangebase>-1</id_type_sidechangebase>
+    <type_sidechangebase xml:space="preserve"></type_sidechangebase>
+    <deadline xml:space="preserve"></deadline>
+    <reqschangedesc xml:space="preserve"></reqschangedesc>
+  </DocChanges>
+  <Post>
+    <id_documents>-1</id_documents>
+    <address xml:space="preserve"></address>
+    <index_n xml:space="preserve"></index_n>
+    <locality xml:space="preserve"></locality>
+    <district xml:space="preserve"></district>
+    <region xml:space="preserve"></region>
+    <street xml:space="preserve"></street>
+    <house_corp_str xml:space="preserve"></house_corp_str>
+    <flat_office xml:space="preserve"></flat_office>
+  </Post>
+  <Payment>
+    <id_documents>-1</id_documents>
+    <prefpayorder>-1</prefpayorder>
+    <payfreq>-1</payfreq>
+    <paydeadline>-1</paydeadline>
+  </Payment>
+  <Comments>
+    <id_documents>-1</id_documents>
+    <comment_text xml:space="preserve"></comment_text>
+    <content xml:space="preserve"></content>
+  </Comments>
+  <Claim>
+    <id_documents>-1</id_documents>
+    <Id_claim_type xml:space="preserve"></Id_claim_type>
+    <statusreqdate>1977-03-26T00:00:00+03:00</statusreqdate>
+    <flsnum xml:space="preserve"></flsnum>
+    <kbk xml:space="preserve"></kbk>
+    <rent xml:space="preserve"></rent>
+    <penalties xml:space="preserve"></penalties>
+  </Claim>
+</SPD>
